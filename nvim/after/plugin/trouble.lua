@@ -1,0 +1,6 @@
+-- -- A pretty list for showing diagnostics, references, telescope results, 
+-- -- quickfix and location lists to help you solve all the trouble your
+-- -- code is causing.
+-- vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
+--   {silent = true, noremap = true}
+-- )

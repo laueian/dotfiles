@@ -1,14 +1,26 @@
-import = ["/Users/mischa/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+import = ["/Users/ianlaue/.config/alacritty/themes/alacritty-theme/themes/gruvbox_dark.toml"]
 
 [font]
-size = 25
+size = 23
 
 [font.normal]
-family = "UbuntuMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 
 [window]
 decorations = "none"
+startup_mode = "Maximized"
+dynamic_padding = true
+opacity = 0.9
 
 [window.padding]
 x = 7
 y = 0
+
+[shell]
+program = "/usr/local/bin/bash"
+args = ["-l"]
+
+[cursor]
+style = "Beam"
+blink_interval = 750
+

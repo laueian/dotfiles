@@ -1,0 +1,28 @@
+{
+    "workspace.checkThirdParty": false,
+    "workspace.library": [
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/neodev.nvim/types/stable",
+        "/usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/gruvbox.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/lualine.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/mason.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/neodev.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/null-ls.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/nvim-treesitter/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/nvim-web-devicons/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/packer.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/telescope.nvim/lua",
+        "/Users/ilaue/.local/share/nvim/site/pack/packer/start/vim-illuminate/lua",
+        "/Users/ilaue/.config/nvim/lua",
+        "${3rd}/luv/library",
+        "${3rd}/luv/library",
+        "${3rd}/luv/library"
+    ]
+}
