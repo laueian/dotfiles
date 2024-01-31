@@ -10,7 +10,6 @@ family = "JetBrainsMono Nerd Font"
 decorations = "none"
 startup_mode = "Maximized"
 dynamic_padding = true
-opacity = 0.9
 
 [window.padding]
 x = 7

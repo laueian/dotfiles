@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# $1: seg,ebs
+# $2: dev,lt,lt-slice,prod
+if [[ $1 == 'ebs' ]]; then
+    data+="{ \"item\": \"THIS IS DEV ONLY CURRENTLY!\" }"
+    data+="{ \"item\": \"client\" }"
+    curr_data=`vault kv get -format json -field=data secrets/shared/client_secrets/dev/demonware/demonware-extension-service-client-secret`
+    data+="$curr_data"
+
+    data+="{ \"item\": \"twitch_api\" }"
+    curr_data=`vault kv get -format json -field=data secrets/shared/twitch_magic/dev/twitch_api`
+    data+="$curr_data"
+fi
+if [[ $1 == 'seg' ]]; then
+    for item in elasticsearch redis mysql kibana 
+    do
+        data+="{ \"item\": \"$item\" }"
+        curr_data=`vault kv get -format json -field=data /secrets/shared/segmentation_service/$2/$item`
+        data+="$curr_data"
+    done
+fi
+
+echo $data | jq '.' | nvim -
+
+# Clear or else it'll save to next call
+data=""
+curr_data=""

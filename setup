@@ -5,11 +5,11 @@
 # and running very quickly.
 
 # brew packages Mac
-# amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl ripgrep kubectx lazygit tmux derailed/k9s/k9s
+# brew install amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl ripgrep kubectx lazygit tmux derailed/k9s/k9s
 
 # For fonts
 # brew tap homebrew/cask-fonts
-# brew install --cask font-<FONT NAME>-nerd-font
+# brew install --cask font-jetbrains-mono-nerd-font
 
 # ubuntu packages apt
 # ripgrep gh
@@ -37,7 +37,7 @@ mkdir -p "$XDG_CONFIG_HOME"/bash
 mkdir -p "$XDG_CONFIG_HOME"/alacritty
 mkdir -p "$XDG_CONFIG_HOME"/skhd
 mkdir -p "$XDG_CONFIG_HOME"/k9s
-mkdir -p "$XDG_CONFIG_HOME"/newsboat
+# mkdir -p "$XDG_CONFIG_HOME"/newsboat
 # mkdir -p "$XDG_CONFIG_HOME"/wezterm
 
 # set up git prompt
@@ -53,20 +53,6 @@ ln -sf "$PWD/.bashrc" "$HOME"/.bashrc
 ln -sf "$PWD/.inputrc" "$HOME"/.inputrc
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
 ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
-ln -sf "$PWD/skhdrc" "$XDG_CONFIG_HOME"/skhd/skhdrc
-ln -sf "$PWD/newsboat/config" "$XDG_CONFIG_HOME"/newsboat/config
-ln -sf "$PWD/newsboat/urls" "$XDG_CONFIG_HOME"/newsboat/urls
-# ln -sf "$PWD/wezterm.lua" /mnt/c/Users/PD2
+# ln -sf "$PWD/newsboat/config" "$XDG_CONFIG_HOME"/newsboat/config
+# ln -sf "$PWD/newsboat/urls" "$XDG_CONFIG_HOME"/newsboat/urls
 
-# set up blog
-# git clone git@github.com:mischavandenburg/hugo-PaperModX-theme.git themes/PaperModX --depth=1
-
-# Second Brain
-# This one's a little tricky because the path contains a space. It needs to be stored as an array,
-# and when called it needs to be quoted.
-# export SECOND_BRAIN=("/Users/mischa/Library/Mobile Documents/iCloud~md~obsidian/Documents/second-brain-01-07-23")
-# ln -sf "$SECOND_BRAIN" ~/second-brain
-#
-# iCloud
-# export ICLOUD=("/Users/mischa/Library/Mobile Documents/com~apple~CloudDocs")
-# ln -sf "$ICLOUD" ~/icloud
