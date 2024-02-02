@@ -18,6 +18,7 @@ bind -x '"\C-l":clear'
 # directories
 export DOTFILES="$HOME/dotfiles"
 export SECOND_BRAIN="$HOME/second-brain"
+export WORK_BRAIN="$HOME/work-brain"
 export SCRIPTS="$DOTFILES/scripts"
 
 # ~~~~~~~~~~~~~~~ Path configuration ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,6 +74,9 @@ alias cdsegdeploy='cd ~/activ/python-dynamic-segmentation-deploy'
 
 alias cdabt='cd ~/activ/abtesting'
 alias cdabtdeploy='cd ~/activ/abtesting-deploy'
+
+alias cdsb='cd $SECOND_BRAIN'
+alias cdwb='cd $WORK_BRAIN'
 
 # docker
 alias dexec='(){docker exec -it $1 /bin/bash;}'
